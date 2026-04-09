@@ -319,7 +319,7 @@ function Profile({ user }) {
   const save = async () => {
     setSaving(true);
     try {
-      await updateProfile(auth.currentUser, { displayName: name, photoURL: photo });
+      await updateProfile(auth.currentUser, { displayName: name, });
       await setDoc(doc(db,"users",user.uid), {
         uid: user.uid, displayName: name, email: user.email, photoURL: photo, bio, online: true,
       }, { merge: true });
