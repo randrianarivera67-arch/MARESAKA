@@ -276,3 +276,84 @@ body {
   transition: background .2s;
 }
 .btn-logout-full:hover { background: #fecaca; }
+:root {
+  --primary: #1877f2;
+  --bg: #f0f2f5;
+  --white: #ffffff;
+  --text: #050505;
+  --gray: #65676b;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+}
+
+/* NAVBAR */
+.navbar {
+  background: var(--white);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.logo {
+  color: var(--primary);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+  margin-top: 10px;
+}
+
+.sidebar, .rightbar {
+  width: 25%;
+  padding: 10px;
+}
+
+.feed {
+  width: 50%;
+  padding: 10px;
+}
+
+/* CARD */
+.card {
+  background: var(--white);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* BUTTON */
+.btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #166fe5;
+}
+
+/* POST INPUT */
+.post-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* TEXT */
+.gray {
+  color: var(--gray);
+}
